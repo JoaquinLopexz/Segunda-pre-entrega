@@ -3,12 +3,14 @@ import { useParams } from 'react-router-dom'
 import Card from './Card'
 
 
-export const ClickCard = ({equipos}) => {
-  const{cardid} = useParams();
-  const ClickCard= equipos.equipos.find((card) => card.id === cardid)
+export const ClickCard = ({ items }) => {
+  const { cardId } = useParams();
+  const ClickCard = items.find((card) => console.log(card))
+
+  console.log("FIND: ", ClickCard)
     return (
     <div>
-        <Card  equipos={ClickCard} />
+        <Card  items={ClickCard} />
     </div>
   )
 }

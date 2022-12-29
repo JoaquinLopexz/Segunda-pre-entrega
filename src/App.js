@@ -5,32 +5,32 @@ import Cards from "./components/Cards.js";
 import ClickCard from "./components/ClickCard.js";
 import { useState, useEffect } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import items from './components/data.js';
+import { equipos } from './components/data.js';
 
 function App() {
-const [equipos, setEquipos] = useState([])
+const [productos, setProductos] = useState([])
 
-useEffect((items) => {
-  items.forEach(item => {
-    setEquipos([...equipos, item]);
-  });
-});
+useEffect(() => {
+  setProductos([...equipos])
+}, [equipos]);
 
+  console.log("productos: ", productos)
   return (
     <BrowserRouter>
       <div className="App">
         <Navbar/>
-        <ItemListContainer /> 
+        <ItemListContainer greeting={'Bienvenidos'}/> 
         <Routes>
           <Route path="/" elementName={<p>Bienvenido a Nova Music</p>} />
-          <Route path="/equipos" element={<Cards items={equipos}/>} />
+          <Route path="/equipos" element={<Cards items={productos}/>} />
           <Route 
-            path="comprar/:cardid" 
-            element={<ClickCard items={equipos} />} /> 
+            path="/comprar/:cardId" 
+            element={<ClickCard items={productos} />} 
+          /> 
         </Routes>
       </div>
     </BrowserRouter>  
-  );
+  );  
 }
    
 export default App;

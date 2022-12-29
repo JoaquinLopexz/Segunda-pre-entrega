@@ -12,12 +12,16 @@ export default function Navbar () {
             <Link to="/equipos">
                 <button className="navbar-button">Nuestros Equipos</button>
             </Link>
-            <Link to="/audio">
-                <button className="navbar-button">Contactos</button>
+            <Link to="/Principiantes">
+                <button className="navbar-button">Principiantes</button>
             </Link>
-            <Link to="/preguntas">
-                <button className="navbar-button">Preguntas Frecuentes</button>
+            <Link to="/Intermedio">
+                <button className="navbar-button">Intermedio</button>
             </Link>
+            <Link to="/Profesional">
+                <button className="navbar-button">Profesional</button>
+            </Link>
+         
             <CardWidget />
         </div>
     )
