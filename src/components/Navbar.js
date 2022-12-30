@@ -12,13 +12,14 @@ export default function Navbar () {
             <Link to="/equipos">
                 <button className="navbar-button">Nuestros Equipos</button>
             </Link>
-            <Link to="/Principiantes">
+            <Link to="/categoria/Principiante">
+            {/* <Link to="/Principiante"> */}
                 <button className="navbar-button">Principiantes</button>
             </Link>
-            <Link to="/Intermedio">
+            <Link to="/categoria/Intermedio">
                 <button className="navbar-button">Intermedio</button>
             </Link>
-            <Link to="/Profesional">
+            <Link to="/categoria/Profesional">
                 <button className="navbar-button">Profesional</button>
             </Link>
          

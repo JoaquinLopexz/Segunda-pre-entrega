@@ -6,7 +6,7 @@ import ClickCard from "./components/ClickCard.js";
 import { useState, useEffect } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { equipos } from './components/data.js';
-import Principiantes from "./components/Principiante";
+import Principiante from "./components/Principiante";
 
 
 
@@ -15,7 +15,7 @@ const [productos, setProductos] = useState([])
 
 useEffect(() => {
   setProductos([...equipos])
-}, [equipos]);
+}, []);
 
  
   return (
@@ -23,14 +23,10 @@ useEffect(() => {
         <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path="/" element={<ItemListContainer greeting={'Bienvenidos'}/> } />
+          <Route path="/" element={<ItemListContainer   /> } />
           <Route path="/equipos" element={<Cards items={productos}/>} />
-          <Route path="/Principiantes" element={<Principiantes items={productos} />} />
-          <Route path="/Intermedio" element={<Cards items={productos}/>} />
-          <Route path="/Profesional" element={<Cards items={productos}/>} />
-          <Route 
-            path="/comprar/:cardId" 
-            element={<ClickCard items={productos} />} 
+          <Route path="/categoria/:category" element={<Principiante productos={productos} />} />
+          <Route path="/comprar/:cardId"  element={<ClickCard items={productos} />} 
           /> 
         </Routes>
     </BrowserRouter>  

@@ -1,11 +1,13 @@
 import "./ItemListContainer.css";
+import  {Link} from 'react-router-dom'
 
-
-export default function ItemListContainer(props) {
+export default function ItemListContainer() {
   return (
     <div className="ItemList">
-      <h1>{props.greeting}</h1> 
-     
+      <Link to="/equipos">
+        <button>Bienvenidos</button>
+      </Link>
+
     </div>
 
   
