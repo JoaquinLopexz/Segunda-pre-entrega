@@ -22,7 +22,7 @@ export const equipos = [
     name: " Pioner Cdj 3000 ",
     description: "Equipo con 6 canales ",
     color: " Negro ",
-    precio: "4.000.000",
+    precio: '4.000.000',
     imgUrl: "https://cdn.shopify.com/s/files/1/0017/2972/products/pioneer_cdj-3000_djm-v10_bundle.jpg?v=1602192396",
     category: "Profesional",
   },
@@ -71,7 +71,7 @@ export const equipos = [
     id: 8,
     name: " PIONEER DDJ-SR2 CONTROLADOR DJ ",
     description: "Consola con 2 canales",
-    color: " 477926",
+    color: " Negro",
     precio: "80.000",
     imgUrl:'https://www.b2bmusicstore.com.ar/wp-content/uploads/pioneer-dj-ddj-sr2.jpg',
     category: "Intermedio",
@@ -84,7 +84,7 @@ export const equipos = [
     color: " Negro ",
     precio: "449384",
     imgUrl: "https://www.b2bmusicstore.com.ar/wp-content/uploads/Numark-Mixstream-Pro-B2Bmusicstore.jpg",
-    category: "",
+    category: "Principiante",
   }
   ,
   {
@@ -94,7 +94,7 @@ export const equipos = [
     color: " Blanca ",
     precio: "80.000",
     imgUrl: "https://www.b2bmusicstore.com.ar/wp-content/uploads/DDJ-FLX6-White-edition-B2BMusicStore-3.png",
-    category: "Principiantes",
+    category: "Principiante",
   }
   ,
   {
@@ -110,7 +110,7 @@ export const equipos = [
   {
     id: 12,
     name: " ALLEN & HEATH XONE:K2",
-    description: "Incorpora una tarjeta de sonido de 4 canales",
+    description: "Consola que incorpora una tarjeta de sonido de 4 canales",
     color: " Negro ",
     precio: "146775",
     imgUrl: "https://www.b2bmusicstore.com.ar/wp-content/uploads/allen-and-heath-xone-k2.jpg",

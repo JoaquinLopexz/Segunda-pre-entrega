@@ -1,18 +1,19 @@
-import React from 'react'
+/* import React  from 'react'
 import { useParams } from 'react-router-dom'
-import Card from './Card'
+import Cards from './Cards'
+import {GlobalContext} from "./Context/CardContext";
 
 
-export const ClickCard = ({ items }) => {
+const ClickCard = () => {
   const { cardId } = useParams();
-  const ClickCard = items.find((card) => console.log(card))
+/*   const ClickC = productos.find((card) => console.log(card)) */
 
-  console.log("FIND: ", ClickCard)
-    return (
+/*   console.log("FIND: ", ClickC) */
+/*     return (
     <div>
-        <Card  items={ClickCard} />
+        <Cards />
     </div>
   )
 }
 
-export default ClickCard 
+export default ClickCard  */ 

@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import CardWidget from "./CardWidget";
+import CardWidget from "../CardWidget/CardWidget";
 import { Link } from "react-router-dom"
 
 export default function Navbar () {  
@@ -7,13 +7,12 @@ export default function Navbar () {
         <div className="navbar-container">   
             <h2>Nova Music</h2>
             <Link to="/">
-                <button className="navbar-button">Inicio</button>
+                <button className="navbar-button">Inicio</button>   
             </Link>
             <Link to="/equipos">
                 <button className="navbar-button">Nuestros Equipos</button>
             </Link>
             <Link to="/categoria/Principiante">
-            {/* <Link to="/Principiante"> */}
                 <button className="navbar-button">Principiantes</button>
             </Link>
             <Link to="/categoria/Intermedio">

@@ -1,9 +1,11 @@
 import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+import {GlobalContext} from "./Context/CardContext";
 
-const Principiante = ({ productos }) => {
+const Principiante = () => {
     const { category } =  useParams()
     const [consolas, setConsolas] = useState([])
+    const {productos} = useContext(GlobalContext);
     
     // crear una función productoFiltrado
     // hacer filter de productos segun su category
@@ -23,7 +25,7 @@ const Principiante = ({ productos }) => {
 
     
     return (
-        <div>
+        <div className='styles-cards'>
             {
                 consolas && consolas.map(consola => (
                     <div key={consola.id}>
@@ -35,7 +37,7 @@ const Principiante = ({ productos }) => {
                 ))
             }
         </div>
-
+    
     )
 
 }
